@@ -182,7 +182,7 @@ h2{
     background: #a5e3f8;
     grid-area: 2 / 1 / 5 / 4;
     display: flex;
-    animation: aDer 2s 1s normal none;
+    animation: aDer 2s 0s normal none;
 }
 
 @keyframes aDer {
@@ -207,7 +207,7 @@ h2{
     display: flex;
     grid-area: 7 / 3 / 10 / 6;
     flex-direction: row-reverse;
-    animation: aIz 2s 1s normal none;
+    animation: aIz 2s 0s normal none;
 }
 
 @keyframes aIz {
