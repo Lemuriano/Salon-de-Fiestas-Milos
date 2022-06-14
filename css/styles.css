@@ -149,6 +149,12 @@ h2{
 
 .galery__img{ 
     margin: 20px 60px;
+    opacity: 0.7;
+}
+
+.galery__img:hover {
+    transform: scale(1.2);
+    opacity: 1;
 }
 
 .galery__img img{
@@ -176,6 +182,18 @@ h2{
     background: #a5e3f8;
     grid-area: 2 / 1 / 5 / 4;
     display: flex;
+    animation: aDer 2s 1s normal none;
+}
+
+@keyframes aDer {
+    0.0%{
+        opacity: 0.1;
+    }
+    100%{
+        right: 20px;
+        transform: translate(10px);
+        opacity: 1;
+    }
 }
 
 .salon__info-text1{
@@ -189,6 +207,19 @@ h2{
     display: flex;
     grid-area: 7 / 3 / 10 / 6;
     flex-direction: row-reverse;
+    animation: aIz 2s 1s normal none;
+}
+
+@keyframes aIz {
+    0.0%{
+        transform-origin: right;
+        opacity: 0.1;
+    }
+    100%{
+        transform-origin: left;
+        transform: translate(-20px);
+        opacity: 1;
+    }
 }
 
 
@@ -307,7 +338,8 @@ textarea{
 
 .footer {
     margin: auto;
-    background-color: #330C2F;
+    background: rgb(51,12,47);
+    background: linear-gradient(180deg, rgba(51,12,47,1) 66%, rgba(112,58,107,1) 95%);
     font-family: 'Irish Grover';
     color: white;
     width: auto;
