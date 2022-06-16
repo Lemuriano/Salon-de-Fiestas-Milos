@@ -5,7 +5,7 @@
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none!important;
     margin: 0 30px;
 }
 
@@ -507,4 +507,10 @@ textarea{
         justify-content: center;
         align-items: center;
     }
+}
+
+@media (max-width: 620px){
+.flex-sm-column {
+    flex-direction: column!important;
+}
 }
