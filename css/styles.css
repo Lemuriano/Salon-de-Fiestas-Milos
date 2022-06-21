@@ -5,7 +5,7 @@
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none!important;
     margin: 0 30px;
 }
 
@@ -33,7 +33,7 @@ hr{
 h1{
     text-align: center;
     margin-top: 3rem;
-    font-family: 'Irish Grover';
+    font-family: 'Kids zone';
     font-size: 50px;
     letter-spacing: 10px;
     color: #373636;
@@ -55,6 +55,13 @@ header {
 .title-logo img{
     width: min(50vw, 600px);
     justify-content: center;
+    animation: floating 3s infinite ease-in-out;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, -0px); }   
 }
 
 /***************Navegacion***************/
@@ -149,6 +156,12 @@ h2{
 
 .galery__img{ 
     margin: 20px 60px;
+    opacity: 0.7;
+}
+
+.galery__img:hover {
+    transform: scale(1.2);
+    opacity: 1;
 }
 
 .galery__img img{
@@ -163,19 +176,33 @@ h2{
 
 /************************** Estilos para seccion "El salon" *************************/
 
-.container{
-    padding: 0 10rem;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(9, 1fr);
+.salon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-
 .salon__info{
+    position: relative;
+    left: -30px;
     padding: 1rem;
     background: #a5e3f8;
     grid-area: 2 / 1 / 5 / 4;
     display: flex;
+    animation: aDer 2s 0s normal none;
+    width: 800px;
+    height: 300px;
+    margin-bottom: 10rem;
+}
+
+@keyframes aDer {
+    0.0%{
+        opacity: 0.1;
+        transform: translate(-20px)
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .salon__info-text1{
@@ -184,15 +211,31 @@ h2{
 }
 
 .salon__info2{
+    position: relative;
+    right: -30px;
     padding: 1rem;
     background: #f4a1d1;
     display: flex;
     grid-area: 7 / 3 / 10 / 6;
     flex-direction: row-reverse;
+    animation: aIz 2s 0s normal none;
+    width: 800px;
+    height: 300px
+}
+
+@keyframes aIz {
+    0.0%{
+        opacity: 0.1;
+        transform: translate(20px)
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 
 .salon__info2-img{
+    height: 100%;
     margin-right: 5px;
     margin-top: 4px;
 }
@@ -307,7 +350,8 @@ textarea{
 
 .footer {
     margin: auto;
-    background-color: #330C2F;
+    background: rgb(51,12,47);
+    background: linear-gradient(180deg, rgba(51,12,47,1) 66%, rgba(112,58,107,1) 95%);
     font-family: 'Irish Grover';
     color: white;
     width: auto;
@@ -445,22 +489,9 @@ textarea{
         top: 23px;
     }
 
-    .container{
-        padding: 0;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-gap: 1rem;
-    }
-
-    .container img{
-        width: 100%;
-    }
-
     .salon__info {
-        margin: 0 auto;
+        width: 500px;
         padding: 1rem;
-        background: #a5e3f8;
-        grid-area: 1 / 2 / 1 / 8;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
@@ -468,11 +499,39 @@ textarea{
     }
 
     .salon__info2 {
+        width: 500px;
         display: flex;
-        grid-area: 2 / 2 / 4 / 8;
-        flex-direction: row-reverse;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media (max-width: 620px){
+
+    .salon__info {
+        left: unset;
+        width: 300px;
+    }
+
+    .salon__info img{
+        width: 100%;
+    }
+
+    .salon__info2 {
+        right: unset;
+        height: 550px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .salon__info2 img{
+        height: unset;
+    }
+    
+    .flex-sm-column {
+        flex-direction: column!important;
     }
 }
