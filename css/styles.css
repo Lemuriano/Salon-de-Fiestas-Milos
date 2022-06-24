@@ -5,6 +5,7 @@
 }
 
 a {
+    color: #000000;
     text-decoration: none!important;
     margin: 0 30px;
 }
@@ -78,10 +79,6 @@ header {
     justify-content: center;
 }
 
-a:visited {
-    color: black;
-}
-
 li:hover{
     background-color: rgb(198, 192, 192);
 }
@@ -111,6 +108,7 @@ body {
 }
 
 .main__message h2{
+    position: relative;
     font-size: 15px;
     font-family: 'Irish Grover';
     grid-area: 4 / 2 / 6 / 5;

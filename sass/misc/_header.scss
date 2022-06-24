@@ -1,0 +1,21 @@
+@import './variables';
+
+header {
+    width: 100%;
+    background-color: $primary-color;
+    text-align: center;
+    border: 3 px solid #330C2F;
+    box-shadow: 0 px 4 px 4 px $primary-color;
+}
+
+.title-logo img{
+    width: min(500px, 600px);
+    justify-content: center;
+    animation: floating 3s infinite ease-in-out;
+}
+
+@keyframes floating {
+    0% { transform: translate( 0,  0px); }
+    50%  { transform: translate( 0, 10px); }
+    100%   { transform: translate( 0, - 0px); }   
+}

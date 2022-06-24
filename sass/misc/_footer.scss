@@ -1,0 +1,43 @@
+@import './variables';
+
+.footer {
+    margin: auto;
+    background: rgb(51,12,47);
+    background: linear-gradient(180deg, rgba(51,12,47,1) 66%, rgba(112,58,107,1) 95%);
+    font-family: $font-text;
+    color: white;
+    width: auto;
+    height: auto;
+    display:flex;
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+/***************direccion***************/
+.footer__address {
+    margin-top: 10px;
+    font-size: small;
+}
+
+
+/* *************copyrigh************* */
+.footer__copyright {
+    text-align: center;
+    padding-top: 6%;
+    font-size: xx-small;
+    margin-left: auto;
+}
+
+/* *************redes sociales************* */
+.footer__rrss {
+    font-size: 50px;
+    display: inline;
+    font-size: small;
+    display: inline-block;
+    margin-left: inherit;
+}
+
+.footer__rrss-icon img{
+    float:right;
+    width: 25px;
+    height: 25px;
+}
