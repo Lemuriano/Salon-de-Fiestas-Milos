@@ -5,15 +5,14 @@ header {
     background-color: $primary-color;
     text-align: center;
     border: 3 px solid #330C2F;
-    box-shadow: 0 px 4 px 4 px $primary-color;
 }
 
 .title-logo img{
     width: 600px;
     justify-content: center;
     animation: floating 3s infinite ease-in-out;
-    @media only screen and (max-width: 600px){
-        width: 80%;
+    @media only screen and (max-width: 640px){
+        width: 70%;
     }
 
 }
