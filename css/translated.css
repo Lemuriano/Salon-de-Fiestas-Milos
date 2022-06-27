@@ -6,9 +6,12 @@ header {
   box-shadow: 0 px 4 px 4 px black; }
 
 .title-logo img {
-  width: 500px;
+  width: 600px;
   justify-content: center;
   animation: floating 3s infinite ease-in-out; }
+  @media only screen and (max-width: 600px) {
+    .title-logo img {
+      width: 80%; } }
 
 @keyframes floating {
   0% {
@@ -17,6 +20,27 @@ header {
     transform: translate(0, 10px); }
   100% {
     transform: translate(0, 0px); } }
+
+.menu {
+  position: relative;
+  top: 19px; }
+  .menu .menu__list {
+    display: inline-flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .menu .menu__item {
+    font-size: 24px;
+    letter-spacing: 0.15em;
+    text-transform: capitalize;
+    background-color: white;
+    font-family: "Irish Grover", cursive;
+    border-style: groove; }
+    @media only screen and (max-width: 600px) {
+      .menu .menu__item {
+        font-size: none; } }
+  .menu li:hover {
+    background-color: #eae4e4; }
 
 * {
   margin: 0; }
@@ -37,7 +61,7 @@ ul li {
   margin: auto;
   background: #330c2f;
   background: linear-gradient(180deg, #330c2f 66%, #703a6b 95%);
-  font-family: "Irish Grover";
+  font-family: "Irish Grover", cursive;
   color: white;
   width: auto;
   height: auto;
@@ -55,6 +79,9 @@ ul li {
   padding-top: 6%;
   font-size: xx-small;
   margin-left: auto; }
+  @media only screen and (max-width: 600px) {
+    .footer__copyright {
+      display: none; } }
 
 /* *************redes sociales************* */
 .footer__rrss {
@@ -63,21 +90,27 @@ ul li {
   font-size: small;
   display: inline-block;
   margin-left: inherit; }
-
-.footer__rrss-icon img {
-  float: right;
-  width: 25px;
-  height: 25px; }
+  @media only screen and (max-width: 600px) {
+    .footer__rrss {
+      font-size: xx-small; } }
+  .footer__rrss img {
+    float: right;
+    width: 25px;
+    height: 25px; }
 
 main {
   padding: 1rem 2rem;
   padding-bottom: 0; }
+  @media only screen and (max-width: 600px) {
+    main {
+      padding: 36px; } }
 
 hr {
   border-color: black;
   border-width: 3px;
   width: 50%;
-  margin: auto; }
+  margin: auto;
+  margin: 0 auto; }
 
 h1 {
   text-align: center;
@@ -87,31 +120,9 @@ h1 {
   letter-spacing: 10px;
   color: #373636;
   margin-bottom: 3rem; }
-
-.menu {
-  position: relative;
-  top: 19px; }
-
-.menu {
-  position: relative;
-  top: 19px; }
-
-.menu__list {
-  display: inline-flex;
-  list-style: none;
-  flex-wrap: wrap;
-  justify-content: center; }
-
-li:hover {
-  background-color: #c6c0c0; }
-
-.menu__item {
-  font-size: 24px;
-  letter-spacing: 0.15em;
-  text-transform: capitalize;
-  background-color: white;
-  font-family: "Irish Grover";
-  border-style: groove; }
+  @media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 36px; } }
 
 body {
   background-image: url(../images/Bubble.svg); }
@@ -123,21 +134,22 @@ body {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   margin-top: 20px; }
-
-.main__message h2 {
-  position: relative;
-  font-size: 15px;
-  font-family: 'Irish Grover';
-  grid-area: 4 / 2 / 6 / 5; }
-
-.main__message-bgimg {
-  grid-area: 2 / 2 / 7 / 5;
-  width: 100%; }
+  .main__message h2 {
+    position: relative;
+    font-size: 15px;
+    font-family: 'Irish Grover';
+    grid-area: 4 / 2 / 6 / 5; }
+  .main__message .main__message-bgimg {
+    grid-area: 2 / 2 / 7 / 5;
+    width: 100%; }
+    @media only screen and (max-width: 600px) {
+      .main__message .main__message-bgimg {
+        display: none; } }
 
 .mid__message {
   padding-top: 5rem;
   text-align: center;
-  font-family: "Irish Grover"; }
+  font-family: "Irish Grover", cursive; }
 
 video {
   padding-top: 10px;
@@ -145,10 +157,18 @@ video {
   display: block;
   margin: auto;
   padding-bottom: 10px; }
+  @media only screen and (max-width: 600px) {
+    video {
+      width: 80%;
+      padding-top: 10px;
+      object-fit: fill;
+      display: block;
+      margin: auto;
+      padding-bottom: 10px; } }
 
 h2 {
   font-size: 40px;
-  font-family: "Irish Grover";
+  font-family: "Irish Grover", cursive;
   text-align: center; }
 
 .galery {
@@ -160,16 +180,27 @@ h2 {
   justify-content: space-evenly;
   align-content: center;
   flex-wrap: wrap; }
+  @media only screen and (max-width: 600px) {
+    .galery {
+      padding: 0;
+      margin: 20px 3px; } }
   .galery .galery__img {
     margin: 20px 60px;
     opacity: 0.7; }
     .galery .galery__img:hover {
       transform: scale(1.2);
       opacity: 1; }
-  .galery img {
-    height: 300px;
-    width: 300px;
-    object-fit: contain;
-    border-radius: 20px;
-    margin: 10px 1px 10px;
-    box-shadow: 5px 8px 12px black; }
+    @media only screen and (max-width: 600px) {
+      .galery .galery__img {
+        margin: 20px 3px; } }
+    .galery .galery__img img {
+      height: 300px;
+      width: 300px;
+      object-fit: contain;
+      border-radius: 20px;
+      margin: 10px 1px 10px;
+      box-shadow: 5px 8px 12px black; }
+      @media only screen and (max-width: 600px) {
+        .galery .galery__img img {
+          width: 100px;
+          height: 100px; } }

@@ -25,6 +25,9 @@
     padding-top: 6%;
     font-size: xx-small;
     margin-left: auto;
+    @media only screen and (max-width: $LowRes){
+        display: none;
+    }
 }
 
 /* *************redes sociales************* */
@@ -34,10 +37,12 @@
     font-size: small;
     display: inline-block;
     margin-left: inherit;
-}
-
-.footer__rrss-icon img{
-    float:right;
-    width: 25px;
-    height: 25px;
+    @media only screen and (max-width: $LowRes){
+        font-size: xx-small
+    }
+    img{
+        float:right;
+        width: 25px;
+        height: 25px;
+    }
 }

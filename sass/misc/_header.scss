@@ -9,9 +9,13 @@ header {
 }
 
 .title-logo img{
-    width: min(500px, 600px);
+    width: 600px;
     justify-content: center;
     animation: floating 3s infinite ease-in-out;
+    @media only screen and (max-width: 600px){
+        width: 80%;
+    }
+
 }
 
 @keyframes floating {
@@ -19,3 +23,29 @@ header {
     50%  { transform: translate( 0, 10px); }
     100%   { transform: translate( 0, - 0px); }   
 }
+
+.menu{
+    position: relative;
+    top: 19px;
+    .menu__list {
+        display: inline-flex;
+        list-style: none;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .menu__item {
+        font-size: 24px;
+        letter-spacing: 0.15em;
+        text-transform: capitalize;
+        background-color: white;
+        font-family: $font-text;
+        border-style: groove;
+        @media only screen and (max-width: 600px){
+            font-size: none;
+            }
+        }
+    li:hover{
+        background-color: rgb(234, 228, 228);
+    }
+}
+
