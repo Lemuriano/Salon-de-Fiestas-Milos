@@ -2,6 +2,8 @@
 @import './misc/header';
 @import './misc/normalize';
 @import './misc/footer';
+@import './misc/maps';
+@import './sections/el-salon';
 
 
 main{
@@ -13,7 +15,7 @@ main{
 }
 
 hr{
-    border-color: $primary-color;
+    border-color: map-get($colores, "pri-color");
     border-width: 3px;
     width:50%;
     margin: auto;
@@ -117,7 +119,7 @@ h2{
             object-fit: contain;
             border-radius: 20px;
             margin: 10px 1px 10px;
-            box-shadow: 5px 8px 12px $primary-color;
+            box-shadow: 5px 8px 12px map-get($colores, "pri-color");
             @media only screen and (max-width: $LowRes){
                 width: 100px;
                 height: 100px;

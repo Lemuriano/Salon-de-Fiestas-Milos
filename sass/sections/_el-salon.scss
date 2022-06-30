@@ -1,0 +1,96 @@
+@import '../misc//mixings';
+
+.salon {
+    @include flexcenter
+    flex-direction: column;
+    .salon__info{
+        position: relative;
+        left: -30px;
+        padding: 1rem;
+        background: #a5e3f8;
+        grid-area: 2 / 1 / 5 / 4;
+        display: flex;
+        animation: aDer 2s 0s normal none;
+        width: 800px;
+        height: 300px;
+        margin-bottom: 10rem;
+        @keyframes aDer {
+            0.0%{
+                opacity: 0.1;
+                transform: translate(-20px)
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        .salon__info-text1{
+            text-align: right;
+            font-family: 'Irish Grover';
+        } 
+        @media screen and (max-width: 878px){
+            width: 500px;
+            padding: 1rem;
+            @include flexcenter;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        @media screen and (max-width: 620px){
+            left: unset;
+            width: 300px;
+        }
+        .salon__info-img{
+            @media screen and (max-width: 620px){
+            width: 100%;
+            }
+        }
+    }        
+    .salon__info2{
+        position: relative;
+        right: -30px;
+        padding: 1rem;
+        background: #f4a1d1;
+        display: flex;
+        grid-area: 7 / 3 / 10 / 6;
+        flex-direction: row-reverse;
+        animation: aIz 2s 0s normal none;
+        width: 800px;
+        height: 300px;
+        @keyframes aIz {
+            0.0%{
+                opacity: 0.1;
+                transform: translate(20px)
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        .salon__info2-img{
+            height: 100%;
+            margin-right: 5px;
+            margin-top: 4px;
+        }
+        .salon__info2-text{
+            margin-right: 10%;
+            margin-top: 10%;
+            text-align: left;
+            font-family: 'Irish Grover';
+            width: 370px;
+            height: 270px;
+        }
+        @media screen and (max-width: 878px){
+            width: 500px;
+            @include flexcenter;
+            justify-content: center;
+        }
+        @media screen and (max-width: 620px){
+            right: unset;
+            height: 550px;
+            width: 300px;
+            @include flexcenter;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+

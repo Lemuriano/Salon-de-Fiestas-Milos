@@ -1,13 +1,20 @@
 @import './variables';
 
+/**Mapa Google**/
+
+.googlemap {
+    // box-shadow: 0px -4px 16px 1px rgb(43 11 11 / 49%);
+    background-color: black;
+    filter: grayscale(70%);
+    margin-top: 2rem;
+}
+
 .footer {
     margin: auto;
     background: rgb(51,12,47);
     background: linear-gradient(180deg, rgba(51,12,47,1) 66%, rgba(112,58,107,1) 95%);
-    font-family: $font-text;
+    font-family: $font-title;
     color: white;
-    width: auto;
-    height: auto;
     display:flex;
     padding: 2rem 1rem 1rem 1rem;
 }
