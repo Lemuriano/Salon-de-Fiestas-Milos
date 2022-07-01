@@ -1,0 +1,26 @@
+@import '../misc/mixings';
+
+.event {
+    @include flexcenter;
+    gap: 4rem;
+    .event__card{
+        padding: 1rem 1rem;
+        color: white;
+        background-color: #ddd9d9f2;
+        text-align: center;
+    }
+    .event__card2{
+        @extend .event__card;
+        background-color: #a2a0a0f2;
+    }
+    .event__card3{
+        @extend .event__card;
+        background-color: #292929f2;
+    }
+    .event p{
+        margin-top: 30px;
+        margin-bottom: 35px;
+    }
+}
+
+

@@ -186,6 +186,23 @@ ul li {
         justify-content: center;
         flex-wrap: wrap; } }
 
+.event {
+  display: flex;
+  align-items: center;
+  gap: 4rem; }
+  .event .event__card, .event .event__card2, .event .event__card3 {
+    padding: 1rem 1rem;
+    color: white;
+    background-color: #ddd9d9f2;
+    text-align: center; }
+  .event .event__card2 {
+    background-color: #a2a0a0f2; }
+  .event .event__card3 {
+    background-color: #292929f2; }
+  .event .event p {
+    margin-top: 30px;
+    margin-bottom: 35px; }
+
 main {
   padding: 1rem 2rem;
   padding-bottom: 0; }

@@ -1,0 +1,45 @@
+Mixing usado
+
+@mixin flexcenter {
+    display: flex;
+    align-items: center;       
+}
+
+Mapa utilizado
+
+$colores: (
+    "pri-color" : black,
+    "sec-color": #a5e3f8,
+    "thr-color": #f4a1d1,
+);
+
+Extend utilizado en la seccion "Eventos"
+
+Etiquetas SEO utilizado
+
+SECCION **HOME**
+<meta name="description" content="El salon elegido por los platences">
+<meta name="keywords" content="milos eventos, salon de fiestas la plata, salon de fiestas, salon infantil, eventos infantiles"/>
+
+SECCION **EL SALON**
+<meta name="description" content="Caracteristicas del salon">
+<meta name="keywords" content="caracteristicas, ubicacion, cocina, salon"/>
+
+SECCION **EVENTOS**
+<meta name="description" content="Tipos de eventos ofrecidos por el salon">
+<meta name="keywords" content="tipos de eventos, celebraciones, casamientos, bautismos, fiesta"/>
+
+
+SECCION **SERVICIOS**
+<meta name="description" content="Servicios ofrecidos por el salon milos eventos">
+<meta name="keywords" content="servicios, mozos, seguridad, wifi, climatizacion"/>
+
+
+SECCION **CONTACTO**
+<meta name="description" content="Formulario de contacto">
+<meta name="keywords" content="contacto, formulario de contacto, telefono"/>
+
+
+
+
+

@@ -1,7 +1,7 @@
 @import '../misc//mixings';
 
 .salon {
-    @include flexcenter
+    @include flexcenter;
     flex-direction: column;
     .salon__info{
         position: relative;
