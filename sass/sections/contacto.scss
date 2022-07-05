@@ -1,0 +1,27 @@
+.contact{
+    margin-bottom: 7rem;
+    display: grid;
+    grid-template-columns: 225px 300px;
+    margin-right: auto;
+    justify-content: center;
+    grid-template-rows: 300px;
+    .contact__img{
+        grid-area: 1 / 1 / 1 / 1;
+        height: 100%;
+    }
+    div {
+        text-align: center;
+        grid-area: 1 / 2 / 2 / 2;
+        background: antiquewhite;
+    }
+}
+
+input{
+    background: #D9D9D9;
+    border: 2px solid #000000
+}
+
+textarea{
+    background: #D9D9D9;
+    border: 2px solid #000000
+}

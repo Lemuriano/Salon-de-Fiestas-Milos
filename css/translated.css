@@ -66,7 +66,7 @@ ul li {
   margin: auto;
   background: #330c2f;
   background: linear-gradient(180deg, #330c2f 66%, #703a6b 95%);
-  font-family: "Kids Zone";
+  font-family: "Irish Grover", cursive;
   color: white;
   display: flex;
   padding: 2rem 1rem 1rem 1rem; }
@@ -110,12 +110,11 @@ ul li {
     left: -30px;
     padding: 1rem;
     background: #a5e3f8;
-    grid-area: 2 / 1 / 5 / 4;
     display: flex;
     animation: aDer 2s 0s normal none;
     width: 800px;
-    height: 300px;
-    margin-bottom: 10rem; }
+    height: auto;
+    margin-bottom: 3rem; }
 
 @keyframes aDer {
   0.0% {
@@ -125,7 +124,7 @@ ul li {
     opacity: 1; } }
     .salon .salon__info .salon__info-text1 {
       text-align: right;
-      font-family: 'Irish Grover'; }
+      font-family: "Chivo", sans-serif; }
     @media screen and (max-width: 878px) {
       .salon .salon__info {
         width: 500px;
@@ -147,11 +146,8 @@ ul li {
     padding: 1rem;
     background: #f4a1d1;
     display: flex;
-    grid-area: 7 / 3 / 10 / 6;
     flex-direction: row-reverse;
-    animation: aIz 2s 0s normal none;
-    width: 800px;
-    height: 300px; }
+    animation: aIz 2s 0s normal none; }
 
 @keyframes aIz {
   0.0% {
@@ -164,23 +160,21 @@ ul li {
       margin-right: 5px;
       margin-top: 4px; }
     .salon .salon__info2 .salon__info2-text {
-      margin-right: 10%;
-      margin-top: 10%;
       text-align: left;
-      font-family: 'Irish Grover';
-      width: 370px;
-      height: 270px; }
+      font-family: "Chivo", sans-serif; }
     @media screen and (max-width: 878px) {
       .salon .salon__info2 {
-        width: 500px;
         display: flex;
         align-items: center;
-        justify-content: center; } }
+        justify-content: center;
+        width: 500px;
+        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap; } }
     @media screen and (max-width: 620px) {
       .salon .salon__info2 {
         right: unset;
-        height: 550px;
-        width: 300px;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -188,13 +182,19 @@ ul li {
 
 .event {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 4rem; }
+  @media screen and (max-width: 930px) {
+    .event {
+      flex-wrap: wrap; } }
   .event .event__card, .event .event__card2, .event .event__card3 {
+    display: flex;
     padding: 1rem 1rem;
     color: white;
     background-color: #ddd9d9f2;
-    text-align: center; }
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center; }
   .event .event__card2 {
     background-color: #a2a0a0f2; }
   .event .event__card3 {
@@ -202,6 +202,27 @@ ul li {
   .event .event p {
     margin-top: 30px;
     margin-bottom: 35px; }
+
+.services {
+  padding: auto;
+  margin-top: 30px; }
+  .services .services__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+  .services .services__list-item {
+    margin: 20px 30px;
+    display: flex;
+    align-items: center;
+    font-family: 'Irish Grover';
+    font-size: large;
+    flex-direction: column; }
+    .services .services__list-item img {
+      width: 100px;
+      height: 100px;
+      filter: drop-shadow(2px 4px 6px black); }
+  .services p {
+    text-align: center; }
 
 main {
   padding: 1rem 2rem;
@@ -218,13 +239,11 @@ hr {
   margin: 0 auto; }
 
 h1 {
+  margin-top: 2rem !important;
+  margin-bottom: 3rem !important;
   text-align: center;
-  margin-top: 3rem;
-  font-family: "Kids Zone";
-  font-size: 50px;
-  letter-spacing: 10px;
-  color: #373636;
-  margin-bottom: 3rem; }
+  font-family: "Irish Grover", cursive;
+  letter-spacing: 7px; }
   @media only screen and (max-width: 600px) {
     h1 {
       font-size: 36px; } }
@@ -254,7 +273,7 @@ body {
 .mid__message {
   padding-top: 5rem;
   text-align: center;
-  font-family: "Irish Grover", cursive; }
+  font-family: "Chivo", sans-serif; }
 
 video {
   padding-top: 10px;
@@ -273,7 +292,7 @@ video {
 
 h2 {
   font-size: 40px;
-  font-family: "Irish Grover", cursive;
+  font-family: "Chivo", sans-serif;
   text-align: center; }
 
 .galery {

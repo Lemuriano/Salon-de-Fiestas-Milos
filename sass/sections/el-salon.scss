@@ -8,12 +8,11 @@
         left: -30px;
         padding: 1rem;
         background: #a5e3f8;
-        grid-area: 2 / 1 / 5 / 4;
         display: flex;
         animation: aDer 2s 0s normal none;
         width: 800px;
-        height: 300px;
-        margin-bottom: 10rem;
+        height: auto;
+        margin-bottom: 3rem;
         @keyframes aDer {
             0.0%{
                 opacity: 0.1;
@@ -25,7 +24,7 @@
         }
         .salon__info-text1{
             text-align: right;
-            font-family: 'Irish Grover';
+            font-family: $font-text;
         } 
         @media screen and (max-width: 878px){
             width: 500px;
@@ -50,11 +49,8 @@
         padding: 1rem;
         background: #f4a1d1;
         display: flex;
-        grid-area: 7 / 3 / 10 / 6;
         flex-direction: row-reverse;
         animation: aIz 2s 0s normal none;
-        width: 800px;
-        height: 300px;
         @keyframes aIz {
             0.0%{
                 opacity: 0.1;
@@ -70,22 +66,20 @@
             margin-top: 4px;
         }
         .salon__info2-text{
-            margin-right: 10%;
-            margin-top: 10%;
             text-align: left;
-            font-family: 'Irish Grover';
-            width: 370px;
-            height: 270px;
+            font-family: $font-text;
         }
         @media screen and (max-width: 878px){
-            width: 500px;
             @include flexcenter;
             justify-content: center;
+            width: 500px;
+            padding: 1rem;
+            display: flex;
+            flex-wrap: wrap;
         }
         @media screen and (max-width: 620px){
             right: unset;
-            height: 550px;
-            width: 300px;
+            width: 100%;
             @include flexcenter;
             justify-content: center;
             flex-wrap: wrap;

@@ -1,0 +1,26 @@
+@import '../misc/mixings';
+
+.services {
+    padding: auto;
+    margin-top: 30px;
+    .services__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .services__list-item{
+        margin: 20px 30px;
+        @include flexcenter;
+        font-family: 'Irish Grover';
+        font-size: large;
+        flex-direction: column;
+        img{
+            width: 100px;
+            height: 100px;
+            filter: drop-shadow(2px 4px 6px black);
+        }
+    }
+    p{
+        text-align: center;
+    }
+}
