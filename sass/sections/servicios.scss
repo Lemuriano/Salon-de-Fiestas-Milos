@@ -6,7 +6,7 @@
     .services__list{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: center;
     }
     .services__list-item{
         margin: 20px 30px;
@@ -14,10 +14,19 @@
         font-family: 'Irish Grover';
         font-size: large;
         flex-direction: column;
+        animation: show 3s 0s normal none;
         img{
             width: 100px;
             height: 100px;
             filter: drop-shadow(2px 4px 6px black);
+        }
+        @keyframes show {
+            0.0%{
+                opacity: 0.1;
+            }
+            100%{
+                opacity: 1;
+            }
         }
     }
     p{

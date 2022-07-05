@@ -2,7 +2,9 @@ header {
   width: 100%;
   background-color: black;
   text-align: center;
-  border: 3 px solid #330C2F; }
+  box-shadow: 0px 3px 33px -2px rgba(0, 0, 0, 0.85);
+  -webkit-box-shadow: 0px 3px 33px -2px rgba(0, 0, 0, 0.85);
+  -moz-box-shadow: 0px 3px 33px -2px rgba(0, 0, 0, 0.85); }
 
 .title-logo img {
   width: 600px;
@@ -40,6 +42,14 @@ header {
         font-size: none; } }
   .menu li:hover {
     background-color: #eae4e4; }
+  .menu .navbar-toggler {
+    border: unset !important;
+    position: absolute;
+    top: -5px;
+    left: -12px; }
+  @media (max-width: 991px) {
+    .menu .navbar-collapse {
+      margin: 50px 66px 20px; } }
 
 * {
   margin: 0; }
@@ -66,40 +76,43 @@ ul li {
   margin: auto;
   background: #330c2f;
   background: linear-gradient(180deg, #330c2f 66%, #703a6b 95%);
-  font-family: "Irish Grover", cursive;
+  font-family: "Chivo", sans-serif;
   color: white;
   display: flex;
-  padding: 2rem 1rem 1rem 1rem; }
-
-/***************direccion***************/
-.footer__address {
-  margin-top: 10px;
-  font-size: small; }
-
-/* *************copyrigh************* */
-.footer__copyright {
-  text-align: center;
-  padding-top: 6%;
-  font-size: xx-small;
-  margin-left: auto; }
-  @media only screen and (max-width: 600px) {
-    .footer__copyright {
-      display: none; } }
-
-/* *************redes sociales************* */
-.footer__rrss {
-  font-size: 50px;
-  display: inline;
-  font-size: small;
-  display: inline-block;
-  margin-left: inherit; }
-  @media only screen and (max-width: 600px) {
-    .footer__rrss {
-      font-size: xx-small; } }
-  .footer__rrss img {
-    float: right;
-    width: 25px;
-    height: 25px; }
+  padding: 1rem;
+  justify-content: space-between;
+  /***************direccion***************/
+  /* *************copyrigh************* */ }
+  .footer .footer__address {
+    margin-top: 10px;
+    font-size: small; }
+    .footer .footer__address ul {
+      margin: unset;
+      padding: unset; }
+    @media only screen and (max-width: 600px) {
+      .footer .footer__address {
+        font-size: xx-small; } }
+  .footer .footer__copyright {
+    text-align: center;
+    font-size: xx-small;
+    align-self: flex-end; }
+    @media only screen and (max-width: 600px) {
+      .footer .footer__copyright {
+        display: none; } }
+  .footer .footer__rrss {
+    margin-top: 10px;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+    .footer .footer__rrss #footer__rrss-list {
+      margin: 0px -32px; }
+      .footer .footer__rrss #footer__rrss-list img {
+        width: 25px;
+        height: 25px; }
+    @media only screen and (max-width: 600px) {
+      .footer .footer__rrss {
+        font-size: xx-small; } }
 
 .salon {
   display: flex;
@@ -114,7 +127,12 @@ ul li {
     animation: aDer 2s 0s normal none;
     width: 800px;
     height: auto;
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+    align-items: center;
+    border: 1px solid rgba(43, 43, 43, 0.36);
+    box-shadow: 0px 1px 52px -6px rgba(17, 153, 230, 0.56);
+    -webkit-box-shadow: 0px 1px 52px -6px rgba(17, 153, 230, 0.56);
+    -moz-box-shadow: 0px 1px 52px -6px rgba(17, 153, 230, 0.56); }
 
 @keyframes aDer {
   0.0% {
@@ -125,6 +143,9 @@ ul li {
     .salon .salon__info .salon__info-text1 {
       text-align: right;
       font-family: "Chivo", sans-serif; }
+      @media screen and (max-width: 878px) {
+        .salon .salon__info .salon__info-text1 {
+          margin-top: 1rem; } }
     @media screen and (max-width: 878px) {
       .salon .salon__info {
         width: 500px;
@@ -142,11 +163,17 @@ ul li {
         width: 100%; } }
   .salon .salon__info2 {
     position: relative;
+    width: 800px;
     right: -30px;
     padding: 1rem;
     background: #f4a1d1;
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
+    border: 1px solid rgba(43, 43, 43, 0.36);
+    box-shadow: 0px 1px 52px -6px rgba(230, 17, 193, 0.56);
+    -webkit-box-shadow: 0px 1px 52px -6px rgba(230, 17, 193, 0.56);
+    -moz-box-shadow: 0px 1px 52px -6px rgba(230, 17, 193, 0.56);
     animation: aIz 2s 0s normal none; }
 
 @keyframes aIz {
@@ -162,6 +189,9 @@ ul li {
     .salon .salon__info2 .salon__info2-text {
       text-align: left;
       font-family: "Chivo", sans-serif; }
+      @media screen and (max-width: 878px) {
+        .salon .salon__info2 .salon__info2-text {
+          margin-top: 1rem; } }
     @media screen and (max-width: 878px) {
       .salon .salon__info2 {
         display: flex;
@@ -194,7 +224,11 @@ ul li {
     background-color: #ddd9d9f2;
     text-align: center;
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+    border: 2px solid #000000;
+    box-shadow: 1px 5px 7px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 5px 7px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 5px 7px 0px rgba(0, 0, 0, 0.75); }
   .event .event__card2 {
     background-color: #a2a0a0f2; }
   .event .event__card3 {
@@ -209,20 +243,50 @@ ul li {
   .services .services__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly; }
+    justify-content: center; }
   .services .services__list-item {
     margin: 20px 30px;
     display: flex;
     align-items: center;
     font-family: 'Irish Grover';
     font-size: large;
-    flex-direction: column; }
+    flex-direction: column;
+    animation: show 3s 0s normal none; }
     .services .services__list-item img {
       width: 100px;
       height: 100px;
       filter: drop-shadow(2px 4px 6px black); }
+
+@keyframes show {
+  0.0% {
+    opacity: 0.1; }
+  100% {
+    opacity: 1; } }
   .services p {
     text-align: center; }
+
+.contact {
+  margin-bottom: 7rem;
+  display: flex;
+  margin-right: auto;
+  justify-content: center; }
+  .contact div {
+    text-align: center;
+    background: antiquewhite; }
+  .contact form {
+    padding: 1rem;
+    font-family: "Chivo", sans-serif; }
+    .contact form input {
+      background: #D9D9D9;
+      border: 2px solid #000000;
+      margin: 10px; }
+    .contact form textarea {
+      background: #D9D9D9;
+      border: 2px solid #000000;
+      margin: 10px; }
+  @media only screen and (max-width: 820px) {
+    .contact img {
+      display: none; } }
 
 main {
   padding: 1rem 2rem;

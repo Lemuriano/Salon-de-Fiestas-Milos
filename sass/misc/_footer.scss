@@ -11,45 +11,49 @@
 
 .footer {
     margin: auto;
-    background: rgb(51,12,47);
-    background: linear-gradient(180deg, rgba(51,12,47,1) 66%, rgba(112,58,107,1) 95%);
-    font-family: $font-title;
+    background: #330c2f;
+    background: linear-gradient(180deg, #330c2f 66%, #703a6b 95%);
+    font-family: $font-text;
     color: white;
-    display:flex;
-    padding: 2rem 1rem 1rem 1rem;
-}
-
-/***************direccion***************/
-.footer__address {
-    margin-top: 10px;
-    font-size: small;
-}
-
-
-/* *************copyrigh************* */
-.footer__copyright {
-    text-align: center;
-    padding-top: 6%;
-    font-size: xx-small;
-    margin-left: auto;
-    @media only screen and (max-width: $LowRes){
-        display: none;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    /***************direccion***************/
+    .footer__address {
+        margin-top: 10px;
+        font-size: small;
+        ul{
+            margin: unset;
+            padding: unset;
+        }
+        @media only screen and (max-width: $LowRes){
+            font-size: xx-small;
+        }
     }
-}
-
-/* *************redes sociales************* */
-.footer__rrss {
-    font-size: 50px;
-    display: inline;
-    font-size: small;
-    display: inline-block;
-    margin-left: inherit;
-    @media only screen and (max-width: $LowRes){
-        font-size: xx-small
+    /* *************copyrigh************* */
+    .footer__copyright {
+        text-align: center;
+        font-size: xx-small;
+        align-self: flex-end;
+        @media only screen and (max-width: $LowRes){
+            display: none;
+        }
     }
-    img{
-        float:right;
-        width: 25px;
-        height: 25px;
+    .footer__rrss {
+        margin-top: 10px;
+        font-size: small;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        #footer__rrss-list{
+            margin: 0px -32px;
+            img{
+                width: 25px;
+                height: 25px;
+            }
+        }        
+        @media only screen and (max-width: $LowRes){
+            font-size: xx-small;
+        }
     }
 }

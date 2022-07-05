@@ -13,6 +13,11 @@
         width: 800px;
         height: auto;
         margin-bottom: 3rem;
+        align-items: center;
+        border: 1px solid rgba(43,43,43,0.36);
+        box-shadow: 0px 1px 52px -6px rgba(17,153,230,0.56);
+        -webkit-box-shadow: 0px 1px 52px -6px rgba(17,153,230,0.56);
+        -moz-box-shadow: 0px 1px 52px -6px rgba(17,153,230,0.56);
         @keyframes aDer {
             0.0%{
                 opacity: 0.1;
@@ -25,6 +30,9 @@
         .salon__info-text1{
             text-align: right;
             font-family: $font-text;
+            @media screen and (max-width: 878px){
+                margin-top: 1rem;
+            }
         } 
         @media screen and (max-width: 878px){
             width: 500px;
@@ -45,11 +53,17 @@
     }        
     .salon__info2{
         position: relative;
+        width: 800px;
         right: -30px;
         padding: 1rem;
         background: #f4a1d1;
         display: flex;
         flex-direction: row-reverse;
+        align-items: center;
+        border: 1px solid rgba(43,43,43,0.36);
+        box-shadow: 0px 1px 52px -6px rgba(230,17,193,0.56);
+        -webkit-box-shadow: 0px 1px 52px -6px rgba(230,17,193,0.56);
+        -moz-box-shadow: 0px 1px 52px -6px rgba(230,17,193,0.56);
         animation: aIz 2s 0s normal none;
         @keyframes aIz {
             0.0%{
@@ -68,6 +82,9 @@
         .salon__info2-text{
             text-align: left;
             font-family: $font-text;
+            @media screen and (max-width: 878px){
+                margin-top: 1rem;
+            }
         }
         @media screen and (max-width: 878px){
             @include flexcenter;
