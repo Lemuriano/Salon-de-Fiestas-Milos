@@ -40,6 +40,8 @@ header {
     @media only screen and (max-width: 600px) {
       .menu .menu__item {
         font-size: none; } }
+  .menu .nav-link {
+    padding: unset !important; }
   .menu li:hover {
     background-color: #eae4e4; }
   .menu .menu__navbar {
@@ -48,12 +50,12 @@ header {
     .menu .menu__navbar .navbar-toggler {
       border: unset !important;
       position: absolute;
-      width: 13%;
-      margin-top: -10%;
+      width: 17%;
+      margin-top: -11%;
       margin-left: -85%; }
     @media (max-width: 991px) {
       .menu .menu__navbar .navbar-collapse {
-        margin: 10px 66px 20px; } }
+        margin: 10px 66px 0px; } }
 
 * {
   margin: 0; }
@@ -112,8 +114,8 @@ ul li {
     .footer .footer__rrss #footer__rrss-list {
       margin: 0px -30px; }
       .footer .footer__rrss #footer__rrss-list img {
-        width: 25px;
-        height: 25px; }
+        width: 20px;
+        height: 20px; }
     @media only screen and (max-width: 600px) {
       .footer .footer__rrss {
         font-size: xx-small; } }
@@ -330,6 +332,9 @@ body {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   margin-top: 20px; }
+  @media only screen and (max-width: 965px) {
+    .main__message {
+      display: none; } }
   .main__message h2 {
     position: relative;
     font-size: 25px;
@@ -340,9 +345,6 @@ body {
     grid-area: 2 / 1 / 7 / 6;
     width: 100%;
     opacity: 0.8; }
-    @media only screen and (max-width: 965px) {
-      .main__message .main__message-bgimg {
-        display: none; } }
 
 .mid__message {
   padding-top: 5rem;

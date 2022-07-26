@@ -47,6 +47,9 @@ body {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     margin-top: 20px;
+    @media only screen and (max-width: 965px){
+        display: none;
+    }
     h2{
         position: relative;
         font-size: 25px;
@@ -59,9 +62,6 @@ body {
         grid-area: 2 / 1 / 7 / 6;
         width: 100%;
         opacity: 0.8;
-        @media only screen and (max-width: 965px){
-            display: none;
-        }
     }    
 }    
 

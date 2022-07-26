@@ -50,6 +50,9 @@ header {
             font-size: none;
             }
         }
+        .nav-link{
+            padding: unset !important;
+        }
     li:hover{
         background-color: rgb(234, 228, 228);
     }
@@ -59,13 +62,13 @@ header {
         .navbar-toggler{
             border: unset !important;
             position: absolute;
-            width: 13%;
-            margin-top: -10%;
+            width: 17%;
+            margin-top: -11%;
             margin-left: -85%;
         }
         .navbar-collapse {
             @media (max-width: 991px){
-                margin: 10px 66px 20px;
+                margin: 10px 66px 0px;
             }
         }
     }
