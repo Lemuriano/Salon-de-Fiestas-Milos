@@ -1,4 +1,5 @@
 header {
+  position: relative;
   width: 100%;
   background-color: black;
   text-align: center;
@@ -10,9 +11,9 @@ header {
   width: 600px;
   justify-content: center;
   animation: floating 3s infinite ease-in-out; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 990px) {
     .title-logo img {
-      width: 70%; } }
+      width: 50%; } }
 
 @keyframes floating {
   0% {
@@ -23,8 +24,7 @@ header {
     transform: translate(0, 0px); } }
 
 .menu {
-  position: relative;
-  top: 19px; }
+  border: unset !important; }
   .menu .menu__list {
     display: inline-flex;
     list-style: none;
@@ -42,14 +42,18 @@ header {
         font-size: none; } }
   .menu li:hover {
     background-color: #eae4e4; }
-  .menu .navbar-toggler {
-    border: unset !important;
-    position: absolute;
-    top: -5px;
-    left: -12px; }
-  @media (max-width: 991px) {
-    .menu .navbar-collapse {
-      margin: 50px 66px 20px; } }
+  .menu .menu__navbar {
+    display: flex;
+    align-items: unset !important; }
+    .menu .menu__navbar .navbar-toggler {
+      border: unset !important;
+      position: absolute;
+      width: 13%;
+      margin-top: -10%;
+      margin-left: -85%; }
+    @media (max-width: 991px) {
+      .menu .menu__navbar .navbar-collapse {
+        margin: 10px 66px 20px; } }
 
 * {
   margin: 0; }
@@ -106,7 +110,7 @@ ul li {
     flex-direction: column;
     align-items: flex-end; }
     .footer .footer__rrss #footer__rrss-list {
-      margin: 0px -32px; }
+      margin: 0px -30px; }
       .footer .footer__rrss #footer__rrss-list img {
         width: 25px;
         height: 25px; }
@@ -125,7 +129,7 @@ ul li {
     background: #a5e3f8;
     display: flex;
     animation: aDer 2s 0s normal none;
-    width: 800px;
+    width: 1000px;
     height: auto;
     margin-bottom: 3rem;
     align-items: center;
@@ -141,8 +145,9 @@ ul li {
   100% {
     opacity: 1; } }
     .salon .salon__info .salon__info-text1 {
-      text-align: right;
-      font-family: "Chivo", sans-serif; }
+      text-align: center;
+      font-family: "Chivo", sans-serif;
+      font-weight: bold; }
       @media screen and (max-width: 878px) {
         .salon .salon__info .salon__info-text1 {
           margin-top: 1rem; } }
@@ -163,7 +168,7 @@ ul li {
         width: 100%; } }
   .salon .salon__info2 {
     position: relative;
-    width: 800px;
+    width: 1000px;
     right: -30px;
     padding: 1rem;
     background: #f4a1d1;
@@ -187,8 +192,9 @@ ul li {
       margin-right: 5px;
       margin-top: 4px; }
     .salon .salon__info2 .salon__info2-text {
-      text-align: left;
-      font-family: "Chivo", sans-serif; }
+      text-align: center;
+      font-family: "Chivo", sans-serif;
+      font-weight: bold; }
       @media screen and (max-width: 878px) {
         .salon .salon__info2 .salon__info2-text {
           margin-top: 1rem; } }
@@ -213,11 +219,13 @@ ul li {
 .event {
   display: flex;
   align-items: stretch;
-  gap: 4rem; }
+  gap: 4rem;
+  justify-content: space-evenly; }
   @media screen and (max-width: 930px) {
     .event {
       flex-wrap: wrap; } }
   .event .event__card, .event .event__card2, .event .event__card3 {
+    width: 300px;
     display: flex;
     padding: 1rem 1rem;
     color: white;
@@ -324,13 +332,15 @@ body {
   margin-top: 20px; }
   .main__message h2 {
     position: relative;
-    font-size: 15px;
+    font-size: 25px;
     font-family: 'Irish Grover';
-    grid-area: 4 / 2 / 6 / 5; }
+    grid-area: 4 / 2 / 6 / 5;
+    font-weight: bold; }
   .main__message .main__message-bgimg {
-    grid-area: 2 / 2 / 7 / 5;
-    width: 100%; }
-    @media only screen and (max-width: 600px) {
+    grid-area: 2 / 1 / 7 / 6;
+    width: 100%;
+    opacity: 0.8; }
+    @media only screen and (max-width: 965px) {
       .main__message .main__message-bgimg {
         display: none; } }
 

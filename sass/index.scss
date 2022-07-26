@@ -49,15 +49,17 @@ body {
     margin-top: 20px;
     h2{
         position: relative;
-        font-size: 15px;
+        font-size: 25px;
         font-family: 'Irish Grover';
         grid-area: 4 / 2 / 6 / 5;
+        font-weight: bold;
         
     }
     .main__message-bgimg{
-        grid-area: 2 / 2 / 7 / 5;
+        grid-area: 2 / 1 / 7 / 6;
         width: 100%;
-        @media only screen and (max-width: $LowRes){
+        opacity: 0.8;
+        @media only screen and (max-width: 965px){
             display: none;
         }
     }    

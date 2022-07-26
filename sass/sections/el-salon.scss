@@ -10,7 +10,7 @@
         background: #a5e3f8;
         display: flex;
         animation: aDer 2s 0s normal none;
-        width: 800px;
+        width: 1000px;
         height: auto;
         margin-bottom: 3rem;
         align-items: center;
@@ -28,8 +28,9 @@
             }
         }
         .salon__info-text1{
-            text-align: right;
+            text-align: center;
             font-family: $font-text;
+            font-weight: bold;
             @media screen and (max-width: 878px){
                 margin-top: 1rem;
             }
@@ -53,7 +54,7 @@
     }        
     .salon__info2{
         position: relative;
-        width: 800px;
+        width: 1000px;
         right: -30px;
         padding: 1rem;
         background: #f4a1d1;
@@ -80,8 +81,9 @@
             margin-top: 4px;
         }
         .salon__info2-text{
-            text-align: left;
+            text-align: center;
             font-family: $font-text;
+            font-weight: bold;
             @media screen and (max-width: 878px){
                 margin-top: 1rem;
             }

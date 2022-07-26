@@ -2,6 +2,7 @@
 @import './maps';
 
 header {
+    position: relative;
     width: 100%;
     background-color: map-get($colores, "pri-color");
     text-align: center;
@@ -14,8 +15,8 @@ header {
     width: 600px;
     justify-content: center;
     animation: floating 3s infinite ease-in-out;
-    @media only screen and (max-width: 640px){
-        width: 70%;
+    @media only screen and (max-width: 990px){
+        width: 50%;
     }
 }
 
@@ -26,8 +27,12 @@ header {
 }
 
 .menu{
-    position: relative;
-    top: 19px;
+    // top: 19px;
+    // width: 15%;
+    border: unset !important;
+    // position: absolute;
+    // margin-top: -14%;
+    // margin-left: -85%;
     .menu__list {
         display: inline-flex;
         list-style: none;
@@ -48,15 +53,20 @@ header {
     li:hover{
         background-color: rgb(234, 228, 228);
     }
-    .navbar-toggler{
-        border: unset !important;
-        position: absolute;
-        top: -5px;
-        left: -12px;
-    }
-    .navbar-collapse {
-        @media (max-width: 991px){
-            margin: 50px 66px 20px;
+    .menu__navbar{
+        display: flex;
+        align-items: unset !important;
+        .navbar-toggler{
+            border: unset !important;
+            position: absolute;
+            width: 13%;
+            margin-top: -10%;
+            margin-left: -85%;
+        }
+        .navbar-collapse {
+            @media (max-width: 991px){
+                margin: 10px 66px 20px;
+            }
         }
     }
 }
